@@ -25,7 +25,7 @@
             <form action="/merge" method="post" enctype="multipart/form-data">
                 <input class="form-control mb-3" type="file" name="pdfs" multiple required>
                 <input class="form-control mb-3" type="file" name="pdfs" multiple required>
-                <button class="btn btn-custom w-100">Merge</button>
+                <button class="btn btn-custom w-50">Merge</button>
             </form>
         </div>
     </div>
@@ -41,7 +41,7 @@
                     <option value="clockwise">Clockwise</option>
                     <option value="counterclockwise">Counterclockwise</option>
                 </select>
-                <button class="btn btn-custom w-100">Rotate</button>
+                <button class="btn btn-custom w-50">Rotate</button>
             </form>
         </div>
     </div>
@@ -53,7 +53,7 @@
             <form action="/encrypt" method="post" enctype="multipart/form-data">
                 <input class="form-control mb-3" type="file" name="pdf" required>
                 <input class="form-control mb-3" type="password" name="password" placeholder="Enter password" required>
-                <button class="btn btn-custom w-100">Encrypt</button>
+                <button class="btn btn-custom w-50">Encrypt</button>
             </form>
         </div>
     </div>
@@ -65,7 +65,7 @@
             <form action="/decrypt" method="post" enctype="multipart/form-data">
                 <input class="form-control mb-3" type="file" name="pdf" required>
                 <input class="form-control mb-3" type="password" name="password" placeholder="Enter password" required>
-                <button class="btn btn-custom w-100">Decrypt</button>
+                <button class="btn btn-custom w-50">Decrypt</button>
             </form>
         </div>
     </div>
@@ -78,7 +78,7 @@
                 <input class="form-control mb-3" type="file" name="pdf" required>
                 <input class="form-control mb-3" type="number" name="start" placeholder="Start page" required>
                 <input class="form-control mb-3" type="number" name="end" placeholder="End page" (optional)>
-                <button class="btn btn-custom w-100">Split</button>
+                <button class="btn btn-custom w-50">Split</button>
             </form>
         </div>
     </div>
@@ -89,7 +89,7 @@
             <h5>Extract Text</h5>
             <form action="/extract-text" method="post" enctype="multipart/form-data">
                 <input class="form-control mb-3" type="file" name="pdf" required>
-                <button class="btn btn-custom w-100">Extract</button>
+                <button class="btn btn-custom w-50">Extract</button>
             </form>
         </div>
     </div>
@@ -100,7 +100,7 @@
             <h5>Extract Images</h5>
             <form action="/extract-images" method="post" enctype="multipart/form-data">
                 <input class="form-control mb-3" type="file" name="pdf" required>
-                <button class="btn btn-info w-100">Extract Images</button>
+                <button class="btn btn-info w-50">Extract Images</button>
             </form>
         </div>
     </div>
@@ -111,12 +111,13 @@
             <h5>Compress PDF</h5>
             <form action="/compress" method="post" enctype="multipart/form-data">
                 <input class="form-control mb-3" type="file" name="pdf" required>
-                <button class="btn btn-danger w-100">Compress</button>
+                <button class="btn btn-danger w-50">Compress</button>
             </form>
-            <p class="mt-3">© 2026 SUREWAL.TECH</p>
+            
         </div>
 
     </div>
+        <p class="mt-3 ">© 2026 SUREWAL.TECH Company</p>
 
 </div>
 
