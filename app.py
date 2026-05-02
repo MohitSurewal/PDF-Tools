@@ -33,6 +33,8 @@ def merge_pdfs():
 
     return send_file(output_path, as_attachment=True)
 
+
+
 @app.route('/encrypt', methods=['POST'])
 def encrypt_pdf():
     file = request.files['pdf']
@@ -54,6 +56,8 @@ def encrypt_pdf():
         writer.write(f)
 
     return send_file(output_path, as_attachment=True)
+
+
 
 
 @app.route('/decrypt', methods=['POST'])
@@ -79,6 +83,8 @@ def decrypt_pdf():
         writer.write(f)
 
     return send_file(output_path, as_attachment=True)
+
+
 
 @app.route('/rotate', methods=['POST'])
 def rotate_pdf():
@@ -165,7 +171,8 @@ def extract_images():
                 f.write(image.data)
             count += 1
 
-    return f"{count} images extracted!"
+    return send_file(img_path,as_attachment=(f"{count} images extracted!"))
+    
 
 
 
